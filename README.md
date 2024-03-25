@@ -1,4 +1,4 @@
-## sertup
+## setup
 
 - edit .zshrc file (`ls -a` to see all(hidden) files)
   - export GOPATH env var
@@ -7,8 +7,10 @@
 ```bash
   # hot reload for go servers using air
   path+=('~/go/bin')
-  alias air='~/go/bin/.air'
+  alias air='~/go/bin/air'
 ```
+
+- move the `main.go` into the project root dir
 
 ## commands
 
@@ -19,7 +21,7 @@
   go install github.com/cosmtrek/air@latest
 
 - firstly find `.air.toml` in current directory, if not found, use defaults
-  `air -c .air.toml`
+  `air init`
 
 ## task 1
 
